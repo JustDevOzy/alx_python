@@ -3,10 +3,13 @@ number = random.randint(-10, 10)
 
 
 if number > 0:
-    print(f"{number}: is positive")
+    result = "is positive"
 
 elif number == 0:
-    print(f"{number}: is zero")
-    
+    result = "is zero"
+
 else:
-    print(f"{number}:is negative")
+    result = "is negative"
+
+
+print(f"The number {number}: {result}")
