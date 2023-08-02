@@ -1,12 +1,16 @@
 import random
-number = random.randint(-10, 10)
+number = random.randint(-100, 100)
+
+
 
 if number > 0:
-    result = "positive"
-elif number == 0:
-    result = "zero"
-else:
-    result = "negative"
+    result = "is positive"
 
-# Print the classification
-print(result)
+elif number == 0:
+    result = "is zero"
+
+else:
+    result = "is negative"
+
+
+print(f"The number {number}: {result}")
