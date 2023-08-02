@@ -1,2 +1,2 @@
 for i in range(99):
-    print(f"{i} = 0x{i:2x}")
+    print("{0} = 0x{1:02x}".format(i,i))
