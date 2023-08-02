@@ -1,15 +1,12 @@
 import random
 number = random.randint(-10, 10)
 
-
 if number > 0:
-    result = "is positive"
-
+    result = "positive"
 elif number == 0:
-    result = "is zero"
-
+    result = "zero"
 else:
-    result = "is negative"
+    result = "negative"
 
-
-print(f"The number {number}: {result}")
+# Print the classification
+print(result)
