@@ -2,7 +2,6 @@ import random
 number = random.randint(-10000, 10000)
 
 last_digit = abs(number) % 10
-suffix = ''
 
 if number < 0:
     last_digit = last_digit * -1
@@ -14,5 +13,6 @@ elif last_digit == 0:
 else:
     suffix = "and is less than 6 and not 0"
 
+prefix = "Last digit of " + str(number) + " is"
 
-print("Last digit of" , number , "is", last_digit, suffix)
+print(prefix,last_digit,suffix)
