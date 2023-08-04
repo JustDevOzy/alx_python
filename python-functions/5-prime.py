@@ -1,11 +1,13 @@
 def is_prime(number):
-    if number < 2:
+    if number <= 1:
         return False
-    elif number == 2:
+    if number <= 3:
         return True
-    elif number % 2 == 0:
+    if number % 2 == 0:
         return False
-    else:
-        for i in range(3, int(number ** 0.5) + 1, 2):
-            if number % 1 == 0:
-                return True
+    i = 3
+    while i * i <= number:
+        if number % i == 0:
+            return False
+        i += 2
+    return True
